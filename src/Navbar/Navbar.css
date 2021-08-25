@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poiret+One&display=swap');
+
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
     height: 80px;
     width: 100%;
-    background: rgb(64, 143, 0);
     color: black;
     display: flex;
     justify-content: space-between;
@@ -9,14 +15,14 @@
     font-size: 1.2rem;
 }
 
-.nav-toggleBtn {
-    display: none;
-}
-
 .nav-logo {
+    /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Poiret One', cursive;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(1, 116, 116);
     text-decoration: none;
-    color: black;
-    padding-left: 1rem;
+    margin-left: 10rem;
 }
 
 .nav-links {
@@ -24,6 +30,7 @@
     grid-template-columns: repeat(4, auto);
     grid-gap: 50px;
     list-style: none;
+    margin-right: 10rem;
 }
 
 .nav-link {
@@ -44,21 +51,33 @@
 }
 
 
-@media screen and (max-width: 768px) {
-    .navbar {
-        position: relative;
-    }
+@media screen and (max-width: 900px) {
+
 
     .nav-links {
         display: flex;
         flex-direction: column;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: -500%;
+        margin: 0;
+        transition: 0.5s all;
+        padding: 0 0 30px;
     }
 
-    .nav-link {
-        display: none;
+    .nav-links.active {
+        background: white;
+        position: fixed;
+        top: 80px;
+    }
+
+    .nav-logo {
+        margin-left: 1rem;
     }
 
     .nav-icon {
         display: flex;
+        margin-right: 1rem;
     }
 }
