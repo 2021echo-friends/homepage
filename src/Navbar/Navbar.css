@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poiret+One&display=swap');
 
 .navbar {
+    display: flex;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: white;
     height: 80px;
+}
+
+.navbar-inner {
     width: 100%;
-    color: black;
+    max-width: 1070px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
+    padding: 0 20px;
 }
 
 .nav-logo {
@@ -22,7 +26,6 @@
     font-weight: 900;
     color: rgb(1, 116, 116);
     text-decoration: none;
-    margin-left: 10rem;
 }
 
 .nav-links {
@@ -30,7 +33,7 @@
     grid-template-columns: repeat(4, auto);
     grid-gap: 50px;
     list-style: none;
-    margin-right: 10rem;
+    font-size: 1.2rem;
 }
 
 .nav-link {
@@ -40,20 +43,17 @@
 }
 
 .nav-link:hover {
-    font-weight: bold;
+    font-weight: 600;
+    border-bottom: 1px solid black;
 }
 
 .nav-icon {
     display: none;
     font-size: 1.7rem;
     cursor: pointer;
-    padding-right: 1rem;
 }
 
-
-@media screen and (max-width: 900px) {
-
-
+@media screen and (max-width: 786px) {
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -72,12 +72,7 @@
         top: 80px;
     }
 
-    .nav-logo {
-        margin-left: 1rem;
-    }
-
     .nav-icon {
         display: flex;
-        margin-right: 1rem;
     }
 }
