@@ -5,7 +5,7 @@
 }
 
 /* MainPage.js */
-.main-container {
+.home-container {
     width: 100%;
     min-height: calc(100vh - 180px);
     display:flex;
@@ -16,11 +16,10 @@
 }
 
 /* MainHome.js */
-.main-inner {
+.home-inner {
     width: 100%;
     max-width: 1070px;
     padding: 80px 20px 0;
-    
     display: flex;
     flex-direction: column;
 }
@@ -98,4 +97,12 @@
 
 .bottom-left {
     display: flex;
+}
+
+/* MainPoint.js */
+.point-inner {
+    min-height: calc(100vh - 200px);
+    width: 100%;
+    max-width: 1070px;
+    padding: 0 20px 0;
 }

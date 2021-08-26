@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 
 function MainHome() {
     return (
-        <div className="main-inner">
+        <div className="home-inner">
             <div className="inner-top">
                 <div className="top-left">
                     <div id="title-area">
