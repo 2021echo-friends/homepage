@@ -7,7 +7,7 @@
 /* MainPage.js */
 .main-container {
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 180px);
     display:flex;
     justify-content: center;
     background: #DAD299;  /* fallback for old browsers */
@@ -20,14 +20,14 @@
     width: 100%;
     max-width: 1070px;
     padding: 80px 20px 0;
-    min-height: calc(100vh - 80px);
+    
     display: flex;
     flex-direction: column;
 }
 
-.inner-top {
+.inner-top, .inner-bottom {
     width: 100%;
-    min-height:calc(calc(100vh - 80px) / 2);
+    min-height:calc(calc(100vh - 180px) / 2);
     display: flex;
 }
 
@@ -38,33 +38,8 @@
     justify-content: center;
 }
 
-.top-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 2rem;
-    font-family: 'NanumSquare';
-}
-
-.top-right div {
-    padding-left: 200px;
-}
-
-.top-right div:first-child {
-    padding-top: 30px;
-}
-
-.top-right div span:first-child {
-    font-size: 3.3rem;
-    font-weight: 700;
-    padding-right: 3px;
-}
-
 #title-area img {
-    position: relative;
-    top: 5px;
-    padding: 0 10px;
+    padding-right: 10px;
 }
 
 #inner-title {
@@ -83,4 +58,44 @@
 
 #title-desc div:last-child {
     padding-top: 10px;
+}
+
+.top-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'NanumSquare';
+}
+
+/* .top-right button {
+    width: 180px;
+    height: 60px;
+    background:rgb(0, 88, 47);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    box-shadow: 2px 4px 10px -4px rgb(0, 1, 1);
+    margin-left: 220px;
+    margin-top: 30px;
+} */
+
+.top-right div {
+    padding-left: 200px;
+}
+
+.top-right div:first-child {
+    padding-top: 30px;
+}
+
+.top-right div span:first-child {
+    font-size: 3.3rem;
+    font-weight: 700;
+    padding-right: 3px;
+}
+
+.bottom-left {
+    display: flex;
 }

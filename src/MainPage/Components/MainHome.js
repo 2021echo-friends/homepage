@@ -26,9 +26,9 @@ function MainHome() {
                 <div className="top-right">
                     <div>
                         <span>
-                            <CountUp 
-                                start={9500} 
-                                end={10000} 
+                            <CountUp
+                                start={9500}
+                                end={10000}
                                 duration={0.6}
                                 separator=","
                             />
@@ -38,12 +38,24 @@ function MainHome() {
                     <div>
                         참여하고 있습니다.
                     </div>
+                    {/* <button>
+                        시작하기
+                    </button> */}
                 </div>
             </div>
             <div className="inner-bottom">
                 <div className="bottom-left">
+                    <img
+                        src={process.env.PUBLIC_URL + '/images/main_trees.png'}
+                        alt="tree img"
+                        width="1070px"
+                        height="350px"
+                    />
                 </div>
                 <div className="bottom-right">
+                    <div>
+
+                    </div>
                 </div>
             </div>
         </div>
