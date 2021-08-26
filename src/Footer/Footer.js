@@ -11,13 +11,13 @@ function Footer() {
                     <div className="footer-logo">
                         ECOSTEP
                     </div>
-                    <div>
+                    <div className="footer-text">
                         대구광역시 북구 대학로 80, 경북대학교
                     </div>
-                    <div>
+                    <div className="footer-text">
                         대표번호 010-1234-5678
                     </div>
-                    <div style={{ marginTop: '5px' }}>
+                    <div className="footer-text">
                         © ECOFRIENDS. ALL RIGHTS RESERVED.
                     </div>
                 </div>

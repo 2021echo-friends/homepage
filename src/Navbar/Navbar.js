@@ -10,7 +10,7 @@ function Navbar() {
     }
 
     return (
-        <nav className="navbar">
+        <nav className={isToggled ? 'navbar active' : 'navbar'}>
             <div className="navbar-inner">
                 <Link to="/" className="nav-logo" onClick={onclick}>
                     ECOSTEP

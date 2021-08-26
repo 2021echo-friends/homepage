@@ -3,8 +3,10 @@ import React from 'react';
 
 function MainPage() {
     return (
-        <div className="main_container">
-           
+        <div>
+           <div className="main_container">
+
+           </div>
         </div>
     )
 }

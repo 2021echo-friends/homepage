@@ -22,6 +22,10 @@
     justify-content: center;
 }
 
+.footer-left :last-child {
+    padding-top: 5px;
+}
+
 .footer-right {
     display: flex;
     color: rgb(97, 97, 97);
@@ -44,6 +48,10 @@
     color: rgb(1, 116, 116);
     text-decoration: none;
     margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 605px) {
