@@ -1,7 +1,86 @@
-.main_container {
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+.hanna * {
+ font-family: 'Hanna', fantasy;
+}
+
+/* MainPage.js */
+.main-container {
     width: 100%;
     min-height: 100vh;
+    display:flex;
+    justify-content: center;
     background: #DAD299;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* MainHome.js */
+.main-inner {
+    width: 100%;
+    max-width: 1070px;
+    padding: 80px 20px 0;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-top {
+    width: 100%;
+    min-height:calc(calc(100vh - 80px) / 2);
+    display: flex;
+}
+
+.top-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'NanumSquare';
+}
+
+.top-right div {
+    padding-left: 200px;
+}
+
+.top-right div:first-child {
+    padding-top: 30px;
+}
+
+.top-right div span:first-child {
+    font-size: 3.3rem;
+    font-weight: 700;
+    padding-right: 3px;
+}
+
+#title-area img {
+    position: relative;
+    top: 5px;
+    padding: 0 10px;
+}
+
+#inner-title {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-family: 'Hanna', fantasy;
+    color:rgb(0, 77, 41);
+}
+
+#title-desc {
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    font-family: 'NanumSquare';
+}
+
+#title-desc div:last-child {
+    padding-top: 10px;
 }
