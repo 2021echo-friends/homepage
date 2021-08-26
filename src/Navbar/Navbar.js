@@ -9,8 +9,23 @@ function Navbar() {
         setisToggled(false);
     }
 
+    document.addEventListener('scroll', () => {
+        let afterPosition = document.documentElement.scrollTop;
+        let navBar = document.getElementById('navbar');
+
+        if(afterPosition >= 80) {   
+            navBar.style.background="white";
+            navBar.style.boxShadow="rgba(149, 157, 165, 0.4) 0px 8px 24px"
+            // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        else if (afterPosition < 80) {
+            document.getElementById('navbar').style.background="none";
+            navBar.style.boxShadow="none";
+        }
+    })
+
     return (
-        <nav className={isToggled ? 'navbar active' : 'navbar'}>
+        <nav className={isToggled ? 'navbar active' : 'navbar'} id='navbar'>
             <div className="navbar-inner">
                 <Link to="/" className="nav-logo" onClick={onclick}>
                     ECOSTEP

@@ -24,6 +24,8 @@
 
 .footer-left :last-child {
     padding-top: 5px;
+    font-size: 12px;
+    font-weight: 100;
 }
 
 .footer-right {

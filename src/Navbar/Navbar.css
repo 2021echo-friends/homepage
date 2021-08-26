@@ -33,7 +33,7 @@
     grid-template-columns: repeat(4, auto);
     grid-gap: 50px;
     list-style: none;
-    font-size: 1rem;
+    font-size: 17px;
 }
 
 .nav-link {
@@ -43,7 +43,7 @@
 }
 
 .nav-link:hover {
-    font-weight: 600;
+    font-weight: 500;
     border-bottom: 1px solid black;
 }
 
