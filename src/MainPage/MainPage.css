@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poiret+One&display=swap');
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
 .hanna * {
@@ -24,42 +25,42 @@
     flex-direction: column;
 }
 
-.inner-top, .inner-bottom {
+.home-top {
     width: 100%;
     min-height:calc(calc(100vh - 180px) / 2);
     display: flex;
 }
 
-.top-left {
+.home-top-left {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#title-area img {
+#home-title-area img {
     padding-right: 10px;
 }
 
-#inner-title {
+#home-inner-title {
     display: inline-block;
     font-size: 3.5rem;
     font-family: 'Hanna', fantasy;
     color:rgb(0, 77, 41);
 }
 
-#title-desc {
+#home-title-desc {
     padding-top: 30px;
     padding-left: 20px;
     font-size: 1.5rem;
     font-family: 'NanumSquare';
 }
 
-#title-desc div:last-child {
+#home-title-desc div:last-child {
     padding-top: 10px;
 }
 
-.top-right {
+.home-top-right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -81,28 +82,70 @@
     margin-top: 30px;
 } */
 
-.top-right div {
+.home-top-right div {
     padding-left: 200px;
 }
 
-.top-right div:first-child {
+.home-top-right div:first-child {
     padding-top: 30px;
 }
 
-.top-right div span:first-child {
+.home-top-right div span:first-child {
     font-size: 3.3rem;
     font-weight: 700;
     padding-right: 3px;
 }
 
-.bottom-left {
+.home-bottom {
+    width: 100%;
+    min-height:calc(calc(100vh - 180px) / 2);
     display: flex;
+    flex-direction: column-reverse;
 }
 
 /* MainPoint.js */
+.point-container {
+    width: 100%;
+    background-color: rgb(251, 242, 225);
+    display:flex;
+    justify-content: center;
+}
+
 .point-inner {
-    min-height: calc(100vh - 200px);
+    font-family: 'NanumSquare';
+    min-height: calc(100vh - 220px);
     width: 100%;
     max-width: 1070px;
     padding: 0 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.point-top {
+    min-height: calc(calc(100vh - 220px) / 2.7);
+    font-size: 3.5rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.point-top-title span {
+    font-family: 'Poiret One', cursive;
+    color: rgb(1, 116, 116);
+}
+
+.point-bottom {
+    display: flex;
+}
+
+.point-bottom-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    padding-left: 50px;
+}
+
+.point-bottom-desc div:last-child {
+    padding-top: 30px;
 }
