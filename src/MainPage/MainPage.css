@@ -116,7 +116,7 @@
     min-height: calc(100vh - 220px);
     width: 100%;
     max-width: 1070px;
-    padding: 0 20px 0;
+    padding: 0 20px 0 80px;
     display: flex;
     flex-direction: column;
 }
@@ -142,10 +142,57 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-left: 50px;
 }
 
 .point-bottom-desc div:last-child {
     padding-top: 30px;
+}
+
+/* MainWay.js */
+.way-container {
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+.way-inner {
+    width: 100%;
+    max-width: 1070px;
+    height: 100vh;
+    padding: 80px 20px;
+    font-family: 'NanumSquare';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.way-top {
+    line-height: 1.4;
+}
+.way-top > div:first-child, .way-bottom > div:first-child {
+    font-size: 1.7rem;
+}
+
+.way-top div:last-child, .way-bottom div:last-child {
+    margin-top: 60px
+}
+.way-top div:last-child ul, .way-bottom div:last-child ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.way-top div:last-child ul li {
+    display: inline-block;
+    width: 33%;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.way-bottom div:last-child ul li {
+    display:inline-block;
+    width: 20%;
 }

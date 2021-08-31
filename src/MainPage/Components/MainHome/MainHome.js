@@ -1,4 +1,4 @@
-import '../MainPage.css';
+import '../../MainPage.css';
 import React from 'react';
 import CountUp from 'react-countup';
 

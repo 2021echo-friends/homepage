@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poiret+One&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 .navbar {
     display: flex;
@@ -34,6 +35,7 @@
     grid-gap: 50px;
     list-style: none;
     font-size: 17px;
+    font-family: 'NanumSquare';
 }
 
 .nav-link {
@@ -43,8 +45,7 @@
 }
 
 .nav-link:hover {
-    font-weight: 500;
-    border-bottom: 1px solid black;
+    font-weight: 700;
 }
 
 .nav-icon {

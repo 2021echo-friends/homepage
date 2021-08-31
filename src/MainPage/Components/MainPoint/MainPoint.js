@@ -1,4 +1,4 @@
-import '../MainPage.css';
+import '../../MainPage.css';
 import React from 'react';
 
 function MainPoint() {
@@ -9,6 +9,7 @@ function MainPoint() {
                     <div>가치있는 소비,</div>
                     <div>
                         <span>ECOSTEP</span>
+                        {/* <img src={process.env.PUBLIC_URL + '/images/highlight.png'}/> */}
                         에서 시작하세요
                     </div>
                 </div>
