@@ -31,7 +31,7 @@ function Navbar() {
                 </Link>
                 <ul className={isToggled ? 'nav-links active' : 'nav-links'}>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link" onClick={onclick}>
+                        <Link to="/intro" className="nav-link" onClick={onclick}>
                             어플 소개
                         </Link>
                     </li>

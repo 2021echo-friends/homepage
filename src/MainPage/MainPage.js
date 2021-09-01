@@ -1,4 +1,4 @@
-import './MainPage.css'
+import './MainPage.css';
 import React from 'react';
 import MainHome from './Components/MainHome/MainHome';
 import MainPoint from './Components/MainPoint/MainPoint';

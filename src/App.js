@@ -1,21 +1,21 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import MainPage from './MainPage/MainPage';
-import React from 'react';
+import AppIntro from './AppIntro/AppIntro';
 
 function App() {
   return (
     <div>
       <Navbar />
       <div>
-        <Router>
-          <Switch>
-            <Route path="/" component={MainPage} />
-          </Switch>
-        </Router>
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/intro" component={AppIntro} />
+        </Switch>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

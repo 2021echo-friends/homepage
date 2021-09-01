@@ -1,0 +1,8 @@
+.intro-container {
+    background-color: rgb(241, 230, 209);
+}
+
+.intro-inner {
+    padding-top: 80px;
+    min-height: calc(100vh - 80px);
+}
