@@ -69,19 +69,6 @@
     font-family: 'NanumSquare';
 }
 
-/* .top-right button {
-    width: 180px;
-    height: 60px;
-    background:rgb(0, 88, 47);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    box-shadow: 2px 4px 10px -4px rgb(0, 1, 1);
-    margin-left: 220px;
-    margin-top: 30px;
-} */
-
 .home-top-right div {
     padding-left: 200px;
 }
@@ -142,8 +129,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding-left: 50px;
+    line-height: 1.4;
 }
 
 .point-bottom-desc div:last-child {
@@ -195,4 +183,48 @@
 .way-bottom div:last-child ul li {
     display:inline-block;
     width: 20%;
+}
+
+/* MainStatus.js */
+.status-container {
+    width: 100%;
+    background-color: #bddad69d;
+}
+
+.status-inner {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 100px 0;
+    font-family: 'NanumSquare';
+    line-height: 1.4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-inner p{
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.status-inner div:last-child {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.status-inner span {
+    font-weight: 800;
+    background: linear-gradient(to top, rgba(47, 173, 25, 0.287) 70%, transparent 50%)
+}
+
+.status-inner button {
+   color: white;
+   background-color: rgb(2, 110, 60);
+   width: 180px;
+   height: 70px;
+   border: none;
+   border-radius: 25px;
+   font-size: 1.3rem;
+   margin-top: 30px;
+   box-shadow: 2px 2px 9px -1px gray;
 }
