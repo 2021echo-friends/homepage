@@ -5,8 +5,16 @@ import { FiMenu, FiX } from 'react-icons/fi';
 
 function Navbar() {
     const [isToggled, setisToggled] = useState(false);
-    const onclick = () => {
+    const links = document.querySelectorAll("nav .navbar-inner ul li .nav-link");
+    const onclick = (id) => {
         setisToggled(false);
+
+        links.forEach((link) => {
+            link.classList.remove("active");
+            if(link.getAttribute("id") === id) {
+                link.classList.add("active");
+            }
+        })
     }
 
     document.addEventListener('scroll', () => {
@@ -31,22 +39,22 @@ function Navbar() {
                 </Link>
                 <ul className={isToggled ? 'nav-links active' : 'nav-links'}>
                     <li className="nav-item">
-                        <Link to="/intro" className="nav-link" onClick={onclick}>
+                        <Link to="/intro" id="intro" className="nav-link" onClick={() => onclick("intro")}>
                             어플 소개
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link" onClick={onclick}>
+                        <Link to="/" id="status" className="nav-link" onClick={() => onclick("status")}>
                             현황
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link" onClick={onclick}>
+                        <Link to="/" id="event" className="nav-link" onClick={() => onclick("event")}>
                             관련 행사
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link" onClick={onclick}>
+                        <Link to="/" id="question" className="nav-link" onClick={() => onclick("question")}>
                             문의
                         </Link>
                     </li>

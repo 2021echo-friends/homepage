@@ -48,6 +48,11 @@
     font-weight: 700;
 }
 
+.nav-link.active {
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
 .nav-icon {
     display: none;
     font-size: 1.7rem;

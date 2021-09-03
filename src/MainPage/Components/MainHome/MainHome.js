@@ -48,7 +48,7 @@ function MainHome() {
                     src={process.env.PUBLIC_URL + '/images/main_trees.png'}
                     alt="tree img"
                     width="1070px"
-                    height="350px"
+                    height="320px"
                 />
                 {/* <div className="bottom-left"></div>
                 <div className="bottom-right"></div> */}
