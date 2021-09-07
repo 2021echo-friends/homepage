@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poiret+One&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 .intro-container {
     display:flex;
     justify-content: center;
@@ -10,40 +13,87 @@
     min-height: calc(100vh - 200px);
     max-width: 1070px;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .intro-screen {
     width: 360px;
-    margin-left: 70px;
     background-color: white;
     border-radius: 50px 50px 0 0;
     overflow: hidden;
+    box-shadow: 1px -1px 5px -1px gray;
 }
 
-.intro-screen ul {
-    list-style: none;
-    padding-left: 0;
+.banner{
+    width:100%;
+}
+
+.banner .img_container{
+    display: flex;
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+    filter: invert(0);
+}
+
+.banner .img_container .bannerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    max-height: 400px;
+    float: left;
+    font-size: 100px;
+    transition: 0.6s;
+}
+
+.banner .img_container .bannerBox:after{
+    content: "";
+    display: block;
+    padding-bottom: 40%;
+}
+
+.banner .img_container .bannerBox img{
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    object-fit: cover;
 }
 
-.intro-screen ul li {
-    height: 100%;
+.banner .img_container .before{
+    left: 60px;
 }
 
-.intro-screen ul li:nth-child(1) {
-    background: #faa;
+.banner .img_container .before img{
+    transform: rotate(180deg);
 }
 
-.intro-screen ul li:nth-child(2) {
-    background: #afa;
+.banner .img_container .after{
+    right: 60px;
 }
 
-.intro-screen ul li:nth-child(3) {
-    background: #aaf;
+.intro-desc {
+    font-family: 'NanumSquare';
+    line-height: 1.5;
 }
 
-.intro-screen ul li:nth-child(4) {
-    background: #faf;
+.intro-desc div:first-child {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.intro-desc div:last-child {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.intro-desc span {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    color: rgb(1, 116, 116);
+}
+
+.intro-desc p {
+    font-size: 1.3rem;
+    
 }
