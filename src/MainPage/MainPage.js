@@ -32,7 +32,7 @@ function MainPage() {
             <div className="way-container">
                 <MainWay />
             </div>
-            <div className="status-container">
+            <div className="main-status-container">
                 <MainStatus />
             </div>
         </div>

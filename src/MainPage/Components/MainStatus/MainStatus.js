@@ -3,7 +3,7 @@ import React from 'react';
 
 function MainStatus() {
     return (
-        <div className="status-inner">
+        <div className="main-status-inner">
             <img
                 src={process.env.PUBLIC_URL + '/images/graph2.png'}
                 alt='graph img'

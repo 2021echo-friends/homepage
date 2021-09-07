@@ -45,12 +45,12 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" id="status" className="nav-link" onClick={() => onclick("status")}>
+                        <Link to="/status" id="status" className="nav-link" onClick={() => onclick("status")}>
                             현황
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" id="event" className="nav-link" onClick={() => onclick("event")}>
+                        <Link to="/event" id="event" className="nav-link" onClick={() => onclick("event")}>
                             관련 행사
                         </Link>
                     </li>

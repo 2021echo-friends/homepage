@@ -129,7 +129,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-left: 50px;
     line-height: 1.4;
 }
@@ -186,12 +186,12 @@
 }
 
 /* MainStatus.js */
-.status-container {
+.main-status-container {
     width: 100%;
     background-color: #bddad69d;
 }
 
-.status-inner {
+.main-status-inner {
     max-width: 1070px;
     margin: 0 auto;
     padding: 100px 0;
@@ -201,23 +201,23 @@
     justify-content: space-between;
 }
 
-.status-inner p{
+.main-status-inner p{
     font-size: 2.6rem;
     font-weight: 600;
 }
 
-.status-inner div:last-child {
+.main-status-inner div:last-child {
     font-size: 2rem;
     display: flex;
     flex-direction: column;
 }
 
-.status-inner span {
+.main-status-inner span {
     font-weight: 800;
     background: linear-gradient(to top, rgba(47, 173, 25, 0.287) 70%, transparent 50%)
 }
 
-.status-inner button {
+.main-status-inner button {
    color: white;
    background-color: rgb(2, 110, 60);
    width: 180px;
