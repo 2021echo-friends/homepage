@@ -9,7 +9,6 @@ function Navbar() {
         setisToggled(false);
         
         const links = document.querySelectorAll("nav .navbar-inner ul li .nav-link");
-        console.log(links)
         links.forEach((link) => {
             link.classList.remove("active");
             if(link.getAttribute("id") === id) {
