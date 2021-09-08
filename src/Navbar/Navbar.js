@@ -61,11 +61,11 @@ function Navbar() {
                             환경 행사
                         </Link>
                     </li>
-                    {/* <li className="nav-item">
+                    <li className="nav-item">
                         <Link to="/" id="question" className="nav-link" onClick={() => onclick("question")}>
                             문의
                         </Link>
-                    </li> */}
+                    </li>
                 </ul>
                 <div onClick={() => setisToggled(!isToggled)} className="nav-icon">
                     {isToggled ? <FiX /> : <FiMenu />}

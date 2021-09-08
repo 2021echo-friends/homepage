@@ -40,13 +40,13 @@ function EventPage() {
             <div className="event-card-container">
                 <div className="event-card-inner">
                     <div className="card-section">
-                    {
-                        EventData.map((data, index) => {
-                            return <Card data={data} key={index}/>
-                        })
-                    }
-
+                        {
+                            EventData.map((data, index) => {
+                                return <Card data={data} key={index} />
+                            })
+                        }
                     </div>
+                    
                 </div>
             </div>
         </div>

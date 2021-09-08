@@ -116,7 +116,7 @@
 
 .point-top {
     min-height: calc(calc(100vh - 220px) / 2.7);
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-weight: 600;
     display: flex;
     flex-direction: column-reverse;
@@ -135,7 +135,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding-left: 50px;
     line-height: 1.4;
 }
