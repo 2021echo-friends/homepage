@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.event-banner-container {
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    background-image: url("./ecoday.jpg");
+    background-repeat: no-repeat;
+    font-family: 'GmarketSansMedium';
+    display: flex;
+    justify-content: center;
+}
+
+.event-inner {
+    width: 100%;
+    height: calc(100vh - 130px);
+    padding: 80px 20px 50px;
+    max-width: 1070px;
+    min-height: 535px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.event-title {
+    padding-top: 50px;
+    text-align: end;
+    color: white;
+    font-size: 2rem;
+}
+
+.event-title p:first-child {
+    font-size: 3rem;
+    font-weight: 700;
+    animation: slidein 1s;
+    position: relative;
+}
+
+.event-title div {
+    position: relative;
+    animation-name: slidein;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.event-title p:last-child {
+    position: relative;
+    animation-name: slidein;
+    animation-delay: 0.4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slidein {
+    from {
+        left: 30%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+.event-card-container {
+    width: 100%;
+    background-color: rgba(213, 240, 214, 0.808);
+    display: flex;
+    justify-content: center;
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+}
+
+.event-card-inner {
+    min-height: 535px;
+    width:100%;
+    max-width: 1070px;
+    padding: 60px 10px 60px;
+}
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(260px, auto);
+    justify-items: center;
+}
+
+.card {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 230px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 15px -6px rgba(128, 128, 128, 0.582);
+    transition: 0.2s ease-in;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+}
+
+.card-image {
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+    object-fit: fill;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.459);
+}
+
+.card-title {
+    padding-top: 10px;
+}

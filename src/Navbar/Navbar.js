@@ -31,6 +31,14 @@ function Navbar() {
         }
     })
 
+    // let e = window.location.pathname;
+    // let navLinks = document.getElementsByClassName("nav-link");
+    
+    // if(e.indexOf("/event") === 0) {
+    //     for(let navLink of navLinks) {
+            
+    //     }
+    // }
     return (
         <nav className={isToggled ? 'navbar active' : 'navbar'} id='navbar'>
             <div className="navbar-inner">
@@ -50,7 +58,7 @@ function Navbar() {
                     </li>
                     <li className="nav-item">
                         <Link to="/event" id="event" className="nav-link" onClick={() => onclick("event")}>
-                            관련 행사
+                            환경 행사
                         </Link>
                     </li>
                     <li className="nav-item">
