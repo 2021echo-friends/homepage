@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contact-container {
+    width: 100%;
+    background-color: rgba(251, 252, 249, 0.904);
+    font-family: 'GmarketSansMedium';
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #80808026;
+}
+
+.contact-inner {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    max-width: 1070px;
+    padding: 80px 20px 50px;
+}
+
+.contact-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contact-title span {
+    font-size: 3rem;
+    color:#174e5f
+}
+
+.contact-title > div {
+    font-size: 1rem;
+    color: rgb(100, 100, 100);
+}
+
+.contact-teams > div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-teams > div > div{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 15px -10px rgba(128, 128, 128, 0.582);
+    border: 1px solid rgba(172, 172, 172, 0.192);
+}
+
+.teams-inner > div {
+    padding: 20px;
+    line-height: 1.4;
+}
+
+.teams-inner p {
+    font-size: 1.3rem;
+}

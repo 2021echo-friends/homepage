@@ -15,7 +15,7 @@ function Footer() {
                         대구광역시 북구 대학로 80, 경북대학교
                     </div>
                     <div className="footer-text">
-                        대표번호 010-1234-5678
+                        대표번호: 010-1234-5678
                     </div>
                     <div className="footer-text">
                         © ECOFRIENDS. ALL RIGHTS RESERVED.

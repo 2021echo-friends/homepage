@@ -32,21 +32,21 @@ function AppIntro() {
                             <div className="bannerBox">
                                 <img
                                     className="bannerImg"
-                                    src={process.env.PUBLIC_URL + '/images/slideimg1.png'}
+                                    src={process.env.PUBLIC_URL + '/images/slideimg1.jpg'}
                                     alt=""
                                 />
                             </div>
                             <div className="bannerBox">
                                 <img
                                     className="bannerImg"
-                                    src={process.env.PUBLIC_URL + '/images/slideimg2.png'}
+                                    src={process.env.PUBLIC_URL + '/images/slideimg2.jpg'}
                                     alt=""
                                 />
                             </div>
                             <div className="bannerBox">
                                 <img
                                     className="bannerImg"
-                                    src={process.env.PUBLIC_URL + '/images/slideimg3.png'}
+                                    src={process.env.PUBLIC_URL + '/images/slideimg3.jpg'}
                                     alt=""
                                 />
                             </div>

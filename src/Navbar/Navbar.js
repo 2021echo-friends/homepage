@@ -62,7 +62,7 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" id="question" className="nav-link" onClick={() => onclick("question")}>
+                        <Link to="/contact" id="question" className="nav-link" onClick={() => onclick("question")}>
                             문의
                         </Link>
                     </li>

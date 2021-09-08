@@ -6,6 +6,7 @@ import MainPage from './MainPage/MainPage';
 import AppIntro from './AppIntro/AppIntro';
 import StatusPage from './StatusPage/StatusPage';
 import EventPage from './EventPage/EventPage';
+import ContactPage from './ContactPage/ContactPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/intro" component={AppIntro} />
           <Route exact path="/status" component={StatusPage}/>
           <Route exact path="/event" component={EventPage}/>
+          <Route exact path="/contact" component={ContactPage}/>
         </Switch>
       </div>
       <Footer />
