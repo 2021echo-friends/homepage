@@ -21,9 +21,14 @@
     padding: 80px 20px 50px;
 }
 
+.contact-top {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
 .contact-title {
     font-size: 1.5rem;
-    text-align: center;
     margin-top: 60px;
 }
 
@@ -42,7 +47,8 @@
     display: flex;
     justify-content: space-evenly;
 }
-.contact-teams > div > div{
+
+.contact-teams > div > div, .team-leader{
     width: 300px;
     height: 200px;
     background-color: white;
@@ -54,8 +60,15 @@
 .teams-inner > div {
     padding: 20px;
     line-height: 1.4;
+    color:rgb(75, 75, 75)
 }
 
 .teams-inner p {
     font-size: 1.3rem;
+    color: black;
+}
+
+.team-leader {
+    position: relative;
+    left: 10%;
 }

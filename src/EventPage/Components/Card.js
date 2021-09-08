@@ -2,6 +2,7 @@ import '../EventPage.css';
 import React from 'react';
 
 function Card(props) {
+    console.log(props.data);
     return (
         <div>
             <input type="checkbox" id="popup"></input>

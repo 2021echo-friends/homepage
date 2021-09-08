@@ -50,26 +50,28 @@ function ContactPage() {
     return (
         <div className="contact-container">
             <div className="contact-inner">
-                <div className="contact-title">
-                    TEAM <span>ECOFREINDS</span>
-                    <div>메일로 문의를 남겨주시면 성실히 답변드리겠습니다</div>
-                </div>
-                <div className="contact-teams">
-                    <div>
+                <div className="contact-top">
+                    <div className="contact-title">
+                        TEAM <span>ECOFREINDS</span>
+                        <div>메일로 문의를 남겨주시면 성실히 답변드리겠습니다</div>
+                    </div>
+                    <div className="team-leader">
                         <div className="teams-inner">
                             <div>
                                 <p>박세찬</p>
-                                backend<br />
+                                Backend<br />
                                 경북대학교<br />
                                 hasmi5452@gmail.com
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="contact-teams">
                     <div>
                         <div className="teams-inner">
                             <div>
                                 <p>박정민</p>
-                                app<br />
+                                APP<br />
                                 경북대학교<br />
                                 pjm9562@naver.com
                             </div>
@@ -77,7 +79,7 @@ function ContactPage() {
                         <div className="teams-inner">
                             <div>
                                 <p>박재완</p>
-                                app<br />
+                                APP<br />
                                 경북대학교<br />
                                 wjp1230@naver.com
                             </div>
@@ -85,7 +87,7 @@ function ContactPage() {
                         <div className="teams-inner">
                             <div>
                                 <p>황아영</p>
-                                app<br />
+                                APP<br />
                                 경북대학교<br />
                                 ayxxng73@gmail.com
                             </div>
@@ -95,24 +97,24 @@ function ContactPage() {
                         <div className="teams-inner">
                             <div>
                                 <p>김주영</p>
-                                web: 관리자 페이지<br/>
-                                경북대학교<br/>
+                                WEB: 관리자 페이지<br />
+                                경북대학교<br />
                                 nullyng@gmail.com
                             </div>
                         </div>
                         <div className="teams-inner">
                             <div>
                                 <p>조인후</p>
-                                web: 홈페이지<br/>
-                                경북대학교<br/>
+                                WEB: 홈페이지<br />
+                                경북대학교<br />
                                 inhudev@gmail.com
                             </div>
                         </div>
                         <div className="teams-inner">
                             <div>
                                 <p>최윤석</p>
-                                web: 관리자 페이지<br/>
-                                경북대학교<br/>
+                                WEB: 관리자 페이지<br />
+                                경북대학교<br />
                                 cdt9473@gmail.com
                             </div>
                         </div>
