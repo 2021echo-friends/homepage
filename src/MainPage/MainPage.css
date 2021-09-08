@@ -4,6 +4,12 @@
 .hanna * {
  font-family: 'Hanna', fantasy;
 }
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* MainPage.js */
 .home-container {
@@ -53,7 +59,7 @@
     padding-top: 30px;
     padding-left: 20px;
     font-size: 1.5rem;
-    font-family: 'NanumSquare';
+    font-family: 'GmarketSansMedium';
 }
 
 #home-title-desc div:last-child {
@@ -66,7 +72,7 @@
     flex-direction: column;
     justify-content: center;
     font-size: 2rem;
-    font-family: 'NanumSquare';
+    font-family: 'GmarketSansMedium';
 }
 
 .home-top-right div {
@@ -99,7 +105,7 @@
 }
 
 .point-inner {
-    font-family: 'NanumSquare';
+    font-family: 'GmarketSansMedium';
     min-height: calc(100vh - 220px);
     width: 100%;
     max-width: 1070px;
@@ -151,7 +157,7 @@
     max-width: 1070px;
     height: 100vh;
     padding: 80px 20px;
-    font-family: 'NanumSquare';
+    font-family: 'GmarketSansMedium';
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -195,7 +201,7 @@
     max-width: 1070px;
     margin: 0 auto;
     padding: 100px 0;
-    font-family: 'NanumSquare';
+    font-family: 'GmarketSansMedium';
     line-height: 1.4;
     display: flex;
     justify-content: space-between;
@@ -218,6 +224,7 @@
 }
 
 .main-status-inner button {
+font-family: 'GmarketSansMedium';
    color: white;
    background-color: rgb(2, 110, 60);
    width: 180px;
@@ -227,4 +234,8 @@
    font-size: 1.3rem;
    margin-top: 30px;
    box-shadow: 2px 2px 9px -1px gray;
+}
+
+.main-status-inner button:hover {
+    cursor: pointer;
 }

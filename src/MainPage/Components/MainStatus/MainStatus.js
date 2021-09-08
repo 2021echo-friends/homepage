@@ -1,5 +1,6 @@
 import '../../MainPage.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function MainStatus() {
     return (
@@ -15,7 +16,7 @@ function MainStatus() {
                     에코스텝의 제품 소비가<br />
                     환경에 얼마나 기여했는지 확인해보세요
                 </div>
-                <button>지금 보러가기</button>
+                <Link to="/status"><button>지금 보러가기</button></Link>
             </div>
         </div>
     )
