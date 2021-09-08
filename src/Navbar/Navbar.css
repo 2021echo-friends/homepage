@@ -32,7 +32,7 @@
 
 .nav-links {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 50px;
     list-style: none;
     font-size: 17px;

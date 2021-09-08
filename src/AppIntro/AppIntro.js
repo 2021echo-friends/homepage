@@ -12,16 +12,14 @@ const bannerAutoSlide = () => {
         banner[i].style.transform = "translateX(" + bannerPos + "%)";
     }
 }
+let bannerSlideTime = setInterval(bannerAutoSlide, 3000);
+
 var bannerMinHeight = 987654321;
 var bannerImgs = document.getElementsByClassName("bannerImg");
 for (var i = 0; i < bannerImgs.length; i++) {
     if (bannerImgs[i].naturalHeight < bannerMinHeight) {
         bannerMinHeight = bannerImgs[i].naturalHeight;
     }
-}
-
-window.onload = () => {
-    setInterval(bannerAutoSlide, 3000);
 }
 
 function AppIntro() {

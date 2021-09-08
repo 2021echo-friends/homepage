@@ -27,8 +27,8 @@ function MainHome() {
                     <div>
                         <span>
                             <CountUp
-                                start={9500}
-                                end={10000}
+                                start={900}
+                                end={1238}
                                 duration={0.6}
                                 separator=","
                             />
