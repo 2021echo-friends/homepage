@@ -14,6 +14,7 @@ function EventPage() {
             })
             .then((response) => {
                 setEventData(response.data);
+                console.log(response.data)
             })
     }, []);
 

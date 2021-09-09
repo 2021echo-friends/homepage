@@ -1,8 +1,21 @@
 import '../EventPage.css';
-import React from 'react';
+import React, {useEffect} from 'react';
 
 function Card(props) {
-    console.log(props.data);
+    useEffect(() => {
+        const imageURL = props.data.body_folder_id;
+
+        fetch(`http://54.180.146.9:3001/auth-non/file?folder_id=${imageURL}`, {
+            method: "GET",
+        })
+            .then((response) => {
+                return response.json();
+            })
+            .then((response) => {
+                console.log(response.data)
+            })
+    }, []);
+
     return (
         <div>
             <input type="checkbox" id="popup"></input>
