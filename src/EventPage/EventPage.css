@@ -88,7 +88,7 @@
 
 .card-section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(260px, auto);
     justify-items: center;
@@ -101,7 +101,8 @@
 }
 
 .card-title {
-    padding-top: 10px;
+    padding-top: 16px;
+    font-size: 1.2rem;
 }
 
 input[id*="popup"] {
@@ -110,12 +111,11 @@ input[id*="popup"] {
 
 input[id*="popup"] + label {
     display: inline-block;
-    width: 250px;
-    height: 230px;
+    width: 450px;
+    height: 330px;
     overflow: hidden;
-    width: 100%;
     border-radius: 7px;
-    box-shadow: 1px 1px 15px -6px rgba(128, 128, 128, 0.582);
+    box-shadow: 1px 1px 15px -4px rgba(128, 128, 128, 0.582);
     transition: 0.2s ease-in;
 }
 
