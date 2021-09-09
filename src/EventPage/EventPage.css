@@ -88,50 +88,46 @@
 
 .card-section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(260px, auto);
+    grid-auto-rows: minmax(370px, auto);
     justify-items: center;
 }
 
-.card-image {
-    overflow: hidden;
-    width: 100%;
-    border-radius: 7px 7px 0 0;
-}
-
-.card-title {
-    padding-top: 10px;
-}
-
-input[id*="popup"] {
-    display: none;
-}
-
-input[id*="popup"] + label {
+.card-box {
     display: inline-block;
-    width: 250px;
-    height: 230px;
-    overflow: hidden;
-    width: 100%;
+    width: 450px;
+    height: 330px;
     border-radius: 7px;
-    box-shadow: 1px 1px 15px -6px rgba(128, 128, 128, 0.582);
+    box-shadow: 1px 1px 15px -4px rgba(128, 128, 128, 0.582);
     transition: 0.2s ease-in;
 }
 
-input[id*="popup"] + label:hover {
+.card-box:hover {
     cursor: pointer;
     transform: translateY(-8px);
 }
 
-input[id*="popup"] + label + div {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+/* .card-box > span {
+    display: inline-block;
+    width: 450px;
+    height: 330px;
+    background: rgba(44, 62, 80, 0.92);
+    position: relative;
+    bottom: 100%;
+} */
+
+.card-image {
+    overflow: hidden;
     width: 100%;
-    height: 100%;
-    z-index: 100;
+    height: 80%;
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+}
+
+.card-title {
+    padding-top: 16px;
+    font-size: 1.3rem;
 }
 
 /* input[id*="popup"]:checked + label + div {
