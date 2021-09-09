@@ -6,7 +6,7 @@ function EventPage() {
     const [EventData, setEventData] = useState([]);
 
     useEffect(() => {
-        fetch("http://54.180.146.9:3001/auth-non/post", {
+        fetch("http://54.180.146.9:3001/auth-non/post?per_page=100", {
             method: "GET",
         })
             .then((response) => {
@@ -14,6 +14,7 @@ function EventPage() {
             })
             .then((response) => {
                 setEventData(response.data);
+                console.log(response.data);
             })
     }, []);
 
